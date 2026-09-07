@@ -440,14 +440,14 @@ body {
 .mh-portfolio-marquee {
   border-top: 1px solid var(--mh-border);
   border-bottom: 1px solid var(--mh-border);
-  padding: 42px 0;
+  padding: 22px 0;
   overflow: hidden;
 }
 
 .mh-portfolio-marquee__track {
   display: flex;
   width: max-content;
-  animation: mh-portfolio-marquee-scroll 30s linear infinite;
+  animation: mh-portfolio-marquee-scroll 26s linear infinite;
 }
 
 .mh-portfolio-marquee:hover .mh-portfolio-marquee__track {
@@ -457,27 +457,27 @@ body {
 .mh-portfolio-marquee__group {
   display: flex;
   align-items: center;
-  gap: 48px;
-  padding-right: 48px;
+  gap: 32px;
+  padding-right: 32px;
   flex-shrink: 0;
 }
 
 .mh-portfolio-marquee__group span {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--mh-muted);
   white-space: nowrap;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: 'Space Grotesk', monospace;
 }
 
 .mh-portfolio-marquee__divider {
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   flex-shrink: 0;
   fill: var(--mh-accent);
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 @keyframes mh-portfolio-marquee-scroll {
