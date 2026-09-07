@@ -79,23 +79,22 @@ body {
   z-index: 100;
   width: 100%;
   height: var(--mh-nav-h);
-  background: transparent;
-  border-bottom: 1px solid transparent;
   overflow: hidden;
-  transition: background-color 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* "Glass filled with water" look: frosted blur + a slow-moving light band,
-   like light refracting through liquid in a bottle. */
-.mh-portfolio-nav.is-scrolled {
+  transition: box-shadow 0.4s ease;
+  /* "Glass filled with water" look: frosted blur + a slow-moving light band,
+     like light refracting through liquid in a bottle — always on. */
   background: linear-gradient(180deg, rgba(24, 30, 34, 0.55), rgba(8, 10, 12, 0.68));
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 12px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
-.mh-portfolio-nav.is-scrolled::before {
+.mh-portfolio-nav.is-scrolled {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.mh-portfolio-nav::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -118,7 +117,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .mh-portfolio-nav.is-scrolled::before {
+  .mh-portfolio-nav::before {
     animation: none;
   }
 }
@@ -140,15 +139,27 @@ body {
   align-items: center;
 }
 
-.mh-portfolio-nav__logo {
-  height: 34px;
-  width: auto;
-  display: block;
-  transition: opacity 0.25s ease;
+.mh-portfolio-nav__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--mh-card);
+  border: 1px solid var(--mh-border);
+  transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
-.mh-portfolio-nav__brand:hover .mh-portfolio-nav__logo {
-  opacity: 0.8;
+.mh-portfolio-nav__brand:hover .mh-portfolio-nav__badge {
+  border-color: var(--mh-accent);
+  transform: translateY(-1px);
+}
+
+.mh-portfolio-nav__logo {
+  height: 17px;
+  width: auto;
+  display: block;
 }
 
 .mh-portfolio-nav__links {
@@ -415,17 +426,27 @@ body {
 .mh-portfolio-marquee__group {
   display: flex;
   align-items: center;
-  gap: 56px;
-  padding-right: 56px;
+  gap: 28px;
+  padding-right: 28px;
   flex-shrink: 0;
 }
 
 .mh-portfolio-marquee__group span {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--mh-muted);
   white-space: nowrap;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', monospace;
+}
+
+.mh-portfolio-marquee__divider {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  fill: var(--mh-accent);
+  opacity: 0.9;
 }
 
 @keyframes mh-portfolio-marquee-scroll {
@@ -441,7 +462,11 @@ body {
 
 @media (max-width: 480px) {
   .mh-portfolio-marquee__group span {
-    font-size: 14px;
+    font-size: 11px;
+  }
+  .mh-portfolio-marquee__divider {
+    width: 11px;
+    height: 11px;
   }
 }
 
