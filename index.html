@@ -38,8 +38,15 @@
         <a href="#mh-portfolio-work" class="mh-portfolio-nav__link">Work</a>
         <a href="#mh-portfolio-services" class="mh-portfolio-nav__link">Services</a>
         <a href="#mh-portfolio-about" class="mh-portfolio-nav__link">About</a>
+        <a href="#mh-portfolio-certifications" class="mh-portfolio-nav__link">Certifications</a>
         <a href="#mh-portfolio-contact" class="mh-portfolio-nav__link mh-portfolio-nav__link--cta">Contact</a>
       </nav>
+
+      <!-- EDIT: change or remove this status line -->
+      <span class="mh-portfolio-nav__status">
+        <span class="mh-portfolio-nav__dot"></span>
+        Available for select work
+      </span>
 
       <button class="mh-portfolio-nav__toggle" id="mh-portfolio-nav-toggle" aria-expanded="false" aria-controls="mh-portfolio-nav-links" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -100,7 +107,7 @@
 
       </div>
 
-      <div class="mh-portfolio-hero__engine" id="mh-portfolio-engine" aria-hidden="true">
+      <div class="mh-portfolio-hero__engine mh-portfolio-hero__engine--desktop" id="mh-portfolio-engine" aria-hidden="true">
         <svg viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg" class="mh-portfolio-engine__svg">
           <defs>
             <linearGradient id="mhGearGradientA" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -134,6 +141,42 @@
             <circle cx="264.1" cy="154.3" r="6" fill="url(#mhHubGradient)" stroke="#000" stroke-width="0.5"/>
           </g>
         </svg>
+      </div>
+
+      <!-- Mobile-only: two-gear chamber. Touch-draggable, with optional phone-tilt motion. -->
+      <div class="mh-portfolio-chamber-wrap mh-portfolio-hero__engine--mobile">
+        <div class="mh-portfolio-chamber" id="mh-portfolio-chamber" aria-hidden="true">
+          <svg viewBox="70 50 215 190" xmlns="http://www.w3.org/2000/svg" class="mh-portfolio-chamber__svg">
+            <defs>
+              <linearGradient id="mhChamberGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4a4a4a"/>
+                <stop offset="45%" stop-color="#2a2a2a"/>
+                <stop offset="100%" stop-color="#161616"/>
+              </linearGradient>
+              <linearGradient id="mhChamberGradB" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5a5a5a"/>
+                <stop offset="50%" stop-color="#333333"/>
+                <stop offset="100%" stop-color="#1c1c1c"/>
+              </linearGradient>
+              <radialGradient id="mhChamberHub" cx="35%" cy="35%" r="70%">
+                <stop offset="0%" stop-color="#8a8a8a"/>
+                <stop offset="100%" stop-color="#1a1a1a"/>
+              </radialGradient>
+            </defs>
+
+            <g class="mh-portfolio-gear mh-portfolio-gear--main" style="transform-origin:150px 160px;">
+              <path fill="url(#mhChamberGradA)" stroke="#000" stroke-width="0.6" d="M 206.55,147.09 L 207.64,153.51 L 219.56,152.16 L 219.56,167.84 L 207.64,166.49 L 206.55,172.91 L 204.75,179.16 L 216.07,183.12 L 209.27,197.24 L 199.11,190.86 L 195.35,196.16 L 191.01,201.01 L 199.50,209.50 L 187.24,219.27 L 180.86,209.11 L 175.17,212.26 L 169.16,214.75 L 173.12,226.07 L 157.84,229.56 L 156.49,217.64 L 150.00,218.00 L 143.51,217.64 L 142.16,229.56 L 126.88,226.07 L 130.84,214.75 L 124.83,212.26 L 119.14,209.11 L 112.76,219.27 L 100.50,209.50 L 108.99,201.01 L 104.65,196.16 L 100.89,190.86 L 90.73,197.24 L 83.93,183.12 L 95.25,179.16 L 93.45,172.91 L 92.36,166.49 L 80.44,167.84 L 80.44,152.16 L 92.36,153.51 L 93.45,147.09 L 95.25,140.84 L 83.93,136.88 L 90.73,122.76 L 100.89,129.14 L 104.65,123.84 L 108.99,118.99 L 100.50,110.50 L 112.76,100.73 L 119.14,110.89 L 124.83,107.74 L 130.84,105.25 L 126.88,93.93 L 142.16,90.44 L 143.51,102.36 L 150.00,102.00 L 156.49,102.36 L 157.84,90.44 L 173.12,93.93 L 169.16,105.25 L 175.17,107.74 L 180.86,110.89 L 187.24,100.73 L 199.50,110.50 L 191.01,118.99 L 195.35,123.84 L 199.11,129.14 L 209.27,122.76 L 216.07,136.88 L 204.75,140.84 Z"/>
+              <circle cx="150" cy="160" r="16" fill="url(#mhChamberHub)" stroke="#000" stroke-width="0.6"/>
+            </g>
+
+            <g class="mh-portfolio-gear mh-portfolio-gear--medium" style="transform-origin:233.6px 101.5px;">
+              <path fill="url(#mhChamberGradB)" stroke="#000" stroke-width="0.5" d="M 264.98,91.30 L 266.19,96.34 L 273.11,95.24 L 273.11,107.76 L 266.19,106.66 L 264.98,111.70 L 263.00,116.48 L 269.24,119.66 L 261.88,129.78 L 256.93,124.83 L 253.00,128.20 L 248.58,130.90 L 251.76,137.14 L 239.86,141.01 L 238.76,134.09 L 233.60,134.50 L 228.44,134.09 L 227.34,141.01 L 215.44,137.14 L 218.62,130.90 L 214.20,128.20 L 210.27,124.83 L 205.32,129.78 L 197.96,119.66 L 204.20,116.48 L 202.22,111.70 L 201.01,106.66 L 194.09,107.76 L 194.09,95.24 L 201.01,96.34 L 202.22,91.30 L 204.20,86.52 L 197.96,83.34 L 205.32,73.22 L 210.27,78.17 L 214.20,74.80 L 218.62,72.10 L 215.44,65.86 L 227.34,61.99 L 228.44,68.91 L 233.60,68.50 L 238.76,68.91 L 239.86,61.99 L 251.76,65.86 L 248.58,72.10 L 253.00,74.80 L 256.93,78.17 L 261.88,73.22 L 269.24,83.34 L 263.00,86.52 Z"/>
+              <circle cx="233.6" cy="101.5" r="9" fill="url(#mhChamberHub)" stroke="#000" stroke-width="0.5"/>
+            </g>
+          </svg>
+        </div>
+        <!-- Shown by script.js only on iOS builds that require an explicit gesture to grant motion access -->
+        <button type="button" class="mh-portfolio-chamber__motion-btn" id="mh-portfolio-motion-btn" hidden>Activate Motion</button>
       </div>
 
     </div>
@@ -346,6 +389,81 @@
     </div>
   </section>
 
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section class="mh-portfolio-certs" id="mh-portfolio-certifications">
+    <div class="mh-portfolio-section-inner">
+
+      <div class="mh-portfolio-section-head">
+        <p class="mh-portfolio-eyebrow">Credentials</p>
+        <h2 class="mh-portfolio-heading-lg">Certifications &amp; Credentials</h2>
+        <p class="mh-portfolio-certs-intro">Proof of the skills and knowledge behind the work.</p>
+      </div>
+
+      <!-- EDIT: each card below is one certificate. Copy a whole <article> block
+           to add a 4th, 5th, etc. — update the data-cert-* attributes and the
+           image src to add your real ones. -->
+      <div class="mh-portfolio-certs-grid">
+
+        <article class="mh-portfolio-cert-card mh-portfolio-reveal">
+          <div class="mh-portfolio-cert-media">
+            <!-- EDIT: replace with <img src="images/certificates/cert-1.jpg" alt="..."> when you have the real certificate -->
+            <svg class="mh-portfolio-cert-placeholder" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 29 14 40 15.5 32 23 34 34 24 28.5 14 34 16 23 8 15.5 19 14 24 4Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mh-portfolio-cert-info">
+            <h3 class="mh-portfolio-cert-title">Front-End Web Development</h3>
+            <p class="mh-portfolio-cert-meta">freeCodeCamp &middot; 2026</p>
+            <button type="button" class="mh-portfolio-cert-view"
+              data-cert-title="Front-End Web Development"
+              data-cert-org="freeCodeCamp"
+              data-cert-year="2026"
+              data-cert-img="images/certificates/cert-1.jpg">
+              View Certificate ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="mh-portfolio-cert-card mh-portfolio-reveal">
+          <div class="mh-portfolio-cert-media">
+            <!-- EDIT: replace with <img src="images/certificates/cert-2.jpg" alt="..."> when you have the real certificate -->
+            <svg class="mh-portfolio-cert-placeholder" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 29 14 40 15.5 32 23 34 34 24 28.5 14 34 16 23 8 15.5 19 14 24 4Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mh-portfolio-cert-info">
+            <!-- EDIT: title / org / year -->
+            <h3 class="mh-portfolio-cert-title">Responsive Web Design</h3>
+            <p class="mh-portfolio-cert-meta">freeCodeCamp &middot; 2025</p>
+            <button type="button" class="mh-portfolio-cert-view"
+              data-cert-title="Responsive Web Design"
+              data-cert-org="freeCodeCamp"
+              data-cert-year="2025"
+              data-cert-img="images/certificates/cert-2.jpg">
+              View Certificate ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="mh-portfolio-cert-card mh-portfolio-reveal">
+          <div class="mh-portfolio-cert-media">
+            <!-- EDIT: replace with <img src="images/certificates/cert-3.jpg" alt="..."> when you have the real certificate -->
+            <svg class="mh-portfolio-cert-placeholder" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 29 14 40 15.5 32 23 34 34 24 28.5 14 34 16 23 8 15.5 19 14 24 4Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mh-portfolio-cert-info">
+            <!-- EDIT: title / org / year -->
+            <h3 class="mh-portfolio-cert-title">Introduction to Artificial Intelligence</h3>
+            <p class="mh-portfolio-cert-meta">EDIT: Organization &middot; 2025</p>
+            <button type="button" class="mh-portfolio-cert-view"
+              data-cert-title="Introduction to Artificial Intelligence"
+              data-cert-org="EDIT: Organization"
+              data-cert-year="2025"
+              data-cert-img="images/certificates/cert-3.jpg">
+              View Certificate ↗
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ================= TESTIMONIALS ================= -->
   <section class="mh-portfolio-testimonials">
     <div class="mh-portfolio-section-inner">
@@ -510,6 +628,7 @@
         <a href="#mh-portfolio-work">Work</a>
         <a href="#mh-portfolio-services">Services</a>
         <a href="#mh-portfolio-about">About</a>
+        <a href="#mh-portfolio-certifications">Certifications</a>
         <a href="#mh-portfolio-contact">Contact</a>
       </nav>
 
@@ -523,6 +642,21 @@
       <p class="mh-portfolio-footer-copy">&copy; <span id="mh-portfolio-year"></span> Mustaqeem Hassan. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- ================= CERTIFICATE MODAL ================= -->
+  <div class="mh-portfolio-cert-modal" id="mh-portfolio-cert-modal" role="dialog" aria-modal="true" aria-labelledby="mh-portfolio-cert-modal-title" hidden>
+    <div class="mh-portfolio-cert-modal__backdrop" data-cert-close></div>
+    <div class="mh-portfolio-cert-modal__panel">
+      <button type="button" class="mh-portfolio-cert-modal__close" data-cert-close aria-label="Close certificate viewer">✕</button>
+      <button type="button" class="mh-portfolio-cert-modal__nav mh-portfolio-cert-modal__nav--prev" id="mh-portfolio-cert-prev" aria-label="Previous certificate">‹</button>
+      <button type="button" class="mh-portfolio-cert-modal__nav mh-portfolio-cert-modal__nav--next" id="mh-portfolio-cert-next" aria-label="Next certificate">›</button>
+      <img class="mh-portfolio-cert-modal__img" id="mh-portfolio-cert-modal-img" src="" alt="">
+      <div class="mh-portfolio-cert-modal__caption">
+        <p class="mh-portfolio-cert-modal__title" id="mh-portfolio-cert-modal-title"></p>
+        <p class="mh-portfolio-cert-modal__meta" id="mh-portfolio-cert-modal-meta"></p>
+      </div>
+    </div>
+  </div>
 
 </div>
 <script src="script.js"></script>
