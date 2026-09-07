@@ -7,10 +7,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* ============================================================
@@ -35,7 +37,6 @@ body {
   font-family: var(--mh-font-body);
   line-height: 1.5;
   position: relative;
-  overflow-x: hidden;
 }
 
 .mh-portfolio-page a {
@@ -79,16 +80,14 @@ body {
   z-index: 100;
   width: 100%;
   height: var(--mh-nav-h);
-  background: transparent;
-  border-bottom: 1px solid transparent;
-  transition: background-color 0.35s ease, border-color 0.35s ease, backdrop-filter 0.35s ease, box-shadow 0.35s ease;
-}
-
-.mh-portfolio-nav.is-scrolled {
   background: rgba(8, 8, 8, 0.72);
   backdrop-filter: blur(16px) saturate(140%);
   -webkit-backdrop-filter: blur(16px) saturate(140%);
   border-bottom: 1px solid var(--mh-border);
+  transition: box-shadow 0.35s ease;
+}
+
+.mh-portfolio-nav.is-scrolled {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -158,38 +157,6 @@ body {
 .mh-portfolio-nav__link--cta:hover {
   border-color: var(--mh-accent);
   color: var(--mh-accent);
-}
-
-.mh-portfolio-nav__status {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12.5px;
-  letter-spacing: 0.04em;
-  color: var(--mh-muted);
-  font-family: var(--mh-font-body);
-  white-space: nowrap;
-}
-
-.mh-portfolio-nav__dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
-  animation: mh-portfolio-pulse 2.4s ease-in-out infinite;
-  flex-shrink: 0;
-}
-
-@keyframes mh-portfolio-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5); }
-  50% { box-shadow: 0 0 0 5px rgba(74, 222, 128, 0); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .mh-portfolio-nav__dot {
-    animation: none;
-  }
 }
 
 .mh-portfolio-nav__toggle {
@@ -1367,10 +1334,6 @@ body {
 
   .mh-portfolio-nav__toggle {
     display: flex;
-  }
-
-  .mh-portfolio-nav__status {
-    display: none;
   }
 
   .mh-portfolio-hero__inner {
