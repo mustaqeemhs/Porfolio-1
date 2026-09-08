@@ -43,6 +43,12 @@ body {
   text-decoration: none;
 }
 
+/* Every section nav links jump to needs breathing room under the sticky
+   header, or content (and images) render partly hidden behind it. */
+.mh-portfolio-page section[id] {
+  scroll-margin-top: calc(var(--mh-nav-h) + 20px);
+}
+
 .mh-portfolio-section-inner {
   max-width: var(--mh-maxw);
   margin: 0 auto;
@@ -572,6 +578,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left center;
 }
 
 .mh-portfolio-work-monogram {
@@ -619,6 +626,10 @@ body {
   color: var(--mh-muted);
   margin: 0 0 20px;
   max-width: 48ch;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .mh-portfolio-work-tags {
