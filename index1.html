@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mustaqeem Hassan — Web Design &amp; Development</title>
+<meta name="description" content="Mustaqeem Hassan designs and builds modern, fast WordPress and WooCommerce websites for small businesses.">
+
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mh-portfolio-page">
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="mh-portfolio-nav" id="mh-portfolio-nav">
+    <div class="mh-portfolio-nav__inner">
+
+      <a href="#mh-portfolio-hero" class="mh-portfolio-nav__brand">
+        <!-- EDIT: to swap the logo image, replace images/logo-mark.png -->
+        <span class="mh-portfolio-nav__badge">
+          <img src="images/logo-mark.png" alt="Mustaqeem Hassan" class="mh-portfolio-nav__logo">
+        </span>
+      </a>
+
+      <nav class="mh-portfolio-nav__links" id="mh-portfolio-nav-links">
+        <a href="#mh-portfolio-hero" class="mh-portfolio-nav__link">Home</a>
+        <a href="#mh-portfolio-work" class="mh-portfolio-nav__link">Work</a>
+        <a href="#mh-portfolio-services" class="mh-portfolio-nav__link">Services</a>
+        <a href="#mh-portfolio-about" class="mh-portfolio-nav__link">About</a>
+        <a href="#mh-portfolio-certifications" class="mh-portfolio-nav__link">Certifications</a>
+        <a href="#mh-portfolio-contact" class="mh-portfolio-nav__link mh-portfolio-nav__link--cta">Contact</a>
+      </nav>
+
+      <button class="mh-portfolio-nav__toggle" id="mh-portfolio-nav-toggle" aria-expanded="false" aria-controls="mh-portfolio-nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+  <!-- ================= HERO ================= -->
+  <section class="mh-portfolio-hero" id="mh-portfolio-hero">
+
+    <div class="mh-portfolio-hero__grid" aria-hidden="true"></div>
+
+    <div class="mh-portfolio-hero__inner">
+
+      <div class="mh-portfolio-hero__content">
+
+        <p class="mh-portfolio-hero__eyebrow">
+          <!-- EDIT: eyebrow text -->
+          Web Design &amp; Development
+        </p>
+
+        <h1 class="mh-portfolio-hero__heading">
+          <!-- EDIT: headline (keep the <br> between the two lines) -->
+          Your Business Deserves<br>a Better Website
+        </h1>
+
+        <p class="mh-portfolio-hero__text">
+          <!-- EDIT: intro paragraph -->
+          I design and build fast, modern WordPress websites that help small businesses look professional, attract customers and grow online.
+        </p>
+
+        <div class="mh-portfolio-hero__actions">
+          <a href="#mh-portfolio-contact" class="mh-portfolio-button mh-portfolio-button--primary">Let's Work Together</a>
+          <a href="#mh-portfolio-work" class="mh-portfolio-button mh-portfolio-button--secondary">View My Work</a>
+        </div>
+
+        <div class="mh-portfolio-hero__social">
+          <span class="mh-portfolio-hero__social-label">Say hello</span>
+
+          <a href="https://wa.me/2349122068094" class="mh-portfolio-social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.1-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.1 14.1c-.22.63-1.28 1.2-1.77 1.27-.45.07-1.02.1-1.65-.1a14.3 14.3 0 0 1-1.5-.56c-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73s.68-1.94.92-2.2c.24-.27.53-.33.7-.33h.5c.16 0 .38-.06.6.45.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.44-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.16.27.7 1.16 1.52 1.88 1.05.93 1.93 1.22 2.2 1.36.27.13.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.81.86.27.13.45.2.51.31.07.11.07.62-.15 1.25Z" fill="currentColor"/></svg>
+          </a>
+          <a href="mailto:hassanmustaqeem001@gmail.com" class="mh-portfolio-social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm1.8.3 6.53 5.2a1 1 0 0 0 1.24 0L19.1 6.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <!-- EDIT: replace # with your LinkedIn URL -->
+          <a href="#" class="mh-portfolio-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.2 8.75h3.5V21H3.2V8.75Zm6.28 0h3.35v1.68h.05c.47-.87 1.6-1.79 3.3-1.79 3.53 0 4.18 2.28 4.18 5.24V21h-3.5v-6.4c0-1.53-.03-3.49-2.12-3.49-2.13 0-2.46 1.65-2.46 3.38V21H9.48V8.75Z" fill="currentColor"/></svg>
+          </a>
+          <!-- EDIT: replace # with your GitHub URL -->
+          <a href="#" class="mh-portfolio-social-icon" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.35 4.68-4.58 4.92.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z" fill="currentColor"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mh-portfolio-hero__engine mh-portfolio-hero__engine--desktop" id="mh-portfolio-engine" aria-hidden="true">
+        <svg viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg" class="mh-portfolio-engine__svg">
+          <defs>
+            <linearGradient id="mhGearGradientA" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4a4a4a"/>
+              <stop offset="45%" stop-color="#2a2a2a"/>
+              <stop offset="100%" stop-color="#161616"/>
+            </linearGradient>
+            <linearGradient id="mhGearGradientB" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#5a5a5a"/>
+              <stop offset="50%" stop-color="#333333"/>
+              <stop offset="100%" stop-color="#1c1c1c"/>
+            </linearGradient>
+            <radialGradient id="mhHubGradient" cx="35%" cy="35%" r="70%">
+              <stop offset="0%" stop-color="#8a8a8a"/>
+              <stop offset="100%" stop-color="#1a1a1a"/>
+            </radialGradient>
+          </defs>
+
+          <g class="mh-portfolio-gear mh-portfolio-gear--main" style="transform-origin:150px 160px;">
+            <path fill="url(#mhGearGradientA)" stroke="#000" stroke-width="0.6" d="M 206.55,147.09 L 207.64,153.51 L 219.56,152.16 L 219.56,167.84 L 207.64,166.49 L 206.55,172.91 L 204.75,179.16 L 216.07,183.12 L 209.27,197.24 L 199.11,190.86 L 195.35,196.16 L 191.01,201.01 L 199.50,209.50 L 187.24,219.27 L 180.86,209.11 L 175.17,212.26 L 169.16,214.75 L 173.12,226.07 L 157.84,229.56 L 156.49,217.64 L 150.00,218.00 L 143.51,217.64 L 142.16,229.56 L 126.88,226.07 L 130.84,214.75 L 124.83,212.26 L 119.14,209.11 L 112.76,219.27 L 100.50,209.50 L 108.99,201.01 L 104.65,196.16 L 100.89,190.86 L 90.73,197.24 L 83.93,183.12 L 95.25,179.16 L 93.45,172.91 L 92.36,166.49 L 80.44,167.84 L 80.44,152.16 L 92.36,153.51 L 93.45,147.09 L 95.25,140.84 L 83.93,136.88 L 90.73,122.76 L 100.89,129.14 L 104.65,123.84 L 108.99,118.99 L 100.50,110.50 L 112.76,100.73 L 119.14,110.89 L 124.83,107.74 L 130.84,105.25 L 126.88,93.93 L 142.16,90.44 L 143.51,102.36 L 150.00,102.00 L 156.49,102.36 L 157.84,90.44 L 173.12,93.93 L 169.16,105.25 L 175.17,107.74 L 180.86,110.89 L 187.24,100.73 L 199.50,110.50 L 191.01,118.99 L 195.35,123.84 L 199.11,129.14 L 209.27,122.76 L 216.07,136.88 L 204.75,140.84 Z"/>
+            <circle cx="150" cy="160" r="16" fill="url(#mhHubGradient)" stroke="#000" stroke-width="0.6"/>
+          </g>
+
+          <g class="mh-portfolio-gear mh-portfolio-gear--medium" style="transform-origin:233.6px 101.5px;">
+            <path fill="url(#mhGearGradientB)" stroke="#000" stroke-width="0.5" d="M 264.98,91.30 L 266.19,96.34 L 273.11,95.24 L 273.11,107.76 L 266.19,106.66 L 264.98,111.70 L 263.00,116.48 L 269.24,119.66 L 261.88,129.78 L 256.93,124.83 L 253.00,128.20 L 248.58,130.90 L 251.76,137.14 L 239.86,141.01 L 238.76,134.09 L 233.60,134.50 L 228.44,134.09 L 227.34,141.01 L 215.44,137.14 L 218.62,130.90 L 214.20,128.20 L 210.27,124.83 L 205.32,129.78 L 197.96,119.66 L 204.20,116.48 L 202.22,111.70 L 201.01,106.66 L 194.09,107.76 L 194.09,95.24 L 201.01,96.34 L 202.22,91.30 L 204.20,86.52 L 197.96,83.34 L 205.32,73.22 L 210.27,78.17 L 214.20,74.80 L 218.62,72.10 L 215.44,65.86 L 227.34,61.99 L 228.44,68.91 L 233.60,68.50 L 238.76,68.91 L 239.86,61.99 L 251.76,65.86 L 248.58,72.10 L 253.00,74.80 L 256.93,78.17 L 261.88,73.22 L 269.24,83.34 L 263.00,86.52 Z"/>
+            <circle cx="233.6" cy="101.5" r="9" fill="url(#mhHubGradient)" stroke="#000" stroke-width="0.5"/>
+          </g>
+
+          <g class="mh-portfolio-gear mh-portfolio-gear--small" style="transform-origin:264.1px 154.3px;">
+            <path fill="url(#mhGearGradientA)" stroke="#000" stroke-width="0.5" d="M 283.50,146.26 L 284.70,150.20 L 289.60,149.23 L 289.60,159.37 L 284.70,158.40 L 283.50,162.34 L 281.56,165.97 L 285.72,168.74 L 278.54,175.92 L 275.77,171.76 L 272.14,173.70 L 268.20,174.90 L 269.17,179.80 L 259.03,179.80 L 260.00,174.90 L 256.06,173.70 L 252.43,171.76 L 249.66,175.92 L 242.48,168.74 L 246.64,165.97 L 244.70,162.34 L 243.50,158.40 L 238.60,159.37 L 238.60,149.23 L 243.50,150.20 L 244.70,146.26 L 246.64,142.63 L 242.48,139.86 L 249.66,132.68 L 252.43,136.84 L 256.06,134.90 L 260.00,133.70 L 259.03,128.80 L 269.17,128.80 L 268.20,133.70 L 272.14,134.90 L 275.77,136.84 L 278.54,132.68 L 285.72,139.86 L 281.56,142.63 Z"/>
+            <circle cx="264.1" cy="154.3" r="6" fill="url(#mhHubGradient)" stroke="#000" stroke-width="0.5"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Mobile-only: two-gear chamber. Touch-draggable, with optional phone-tilt motion. -->
+      <div class="mh-portfolio-chamber-wrap mh-portfolio-hero__engine--mobile">
+        <div class="mh-portfolio-chamber" id="mh-portfolio-chamber" aria-hidden="true">
+          <svg viewBox="70 50 215 190" xmlns="http://www.w3.org/2000/svg" class="mh-portfolio-chamber__svg">
+            <defs>
+              <linearGradient id="mhChamberGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4a4a4a"/>
+                <stop offset="45%" stop-color="#2a2a2a"/>
+                <stop offset="100%" stop-color="#161616"/>
+              </linearGradient>
+              <linearGradient id="mhChamberGradB" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5a5a5a"/>
+                <stop offset="50%" stop-color="#333333"/>
+                <stop offset="100%" stop-color="#1c1c1c"/>
+              </linearGradient>
+              <radialGradient id="mhChamberHub" cx="35%" cy="35%" r="70%">
+                <stop offset="0%" stop-color="#8a8a8a"/>
+                <stop offset="100%" stop-color="#1a1a1a"/>
+              </radialGradient>
+            </defs>
+
+            <g class="mh-portfolio-gear mh-portfolio-gear--main" style="transform-origin:150px 160px;">
+              <path fill="url(#mhChamberGradA)" stroke="#000" stroke-width="0.6" d="M 206.55,147.09 L 207.64,153.51 L 219.56,152.16 L 219.56,167.84 L 207.64,166.49 L 206.55,172.91 L 204.75,179.16 L 216.07,183.12 L 209.27,197.24 L 199.11,190.86 L 195.35,196.16 L 191.01,201.01 L 199.50,209.50 L 187.24,219.27 L 180.86,209.11 L 175.17,212.26 L 169.16,214.75 L 173.12,226.07 L 157.84,229.56 L 156.49,217.64 L 150.00,218.00 L 143.51,217.64 L 142.16,229.56 L 126.88,226.07 L 130.84,214.75 L 124.83,212.26 L 119.14,209.11 L 112.76,219.27 L 100.50,209.50 L 108.99,201.01 L 104.65,196.16 L 100.89,190.86 L 90.73,197.24 L 83.93,183.12 L 95.25,179.16 L 93.45,172.91 L 92.36,166.49 L 80.44,167.84 L 80.44,152.16 L 92.36,153.51 L 93.45,147.09 L 95.25,140.84 L 83.93,136.88 L 90.73,122.76 L 100.89,129.14 L 104.65,123.84 L 108.99,118.99 L 100.50,110.50 L 112.76,100.73 L 119.14,110.89 L 124.83,107.74 L 130.84,105.25 L 126.88,93.93 L 142.16,90.44 L 143.51,102.36 L 150.00,102.00 L 156.49,102.36 L 157.84,90.44 L 173.12,93.93 L 169.16,105.25 L 175.17,107.74 L 180.86,110.89 L 187.24,100.73 L 199.50,110.50 L 191.01,118.99 L 195.35,123.84 L 199.11,129.14 L 209.27,122.76 L 216.07,136.88 L 204.75,140.84 Z"/>
+              <circle cx="150" cy="160" r="16" fill="url(#mhChamberHub)" stroke="#000" stroke-width="0.6"/>
+            </g>
+
+            <g class="mh-portfolio-gear mh-portfolio-gear--medium" style="transform-origin:233.6px 101.5px;">
+              <path fill="url(#mhChamberGradB)" stroke="#000" stroke-width="0.5" d="M 264.98,91.30 L 266.19,96.34 L 273.11,95.24 L 273.11,107.76 L 266.19,106.66 L 264.98,111.70 L 263.00,116.48 L 269.24,119.66 L 261.88,129.78 L 256.93,124.83 L 253.00,128.20 L 248.58,130.90 L 251.76,137.14 L 239.86,141.01 L 238.76,134.09 L 233.60,134.50 L 228.44,134.09 L 227.34,141.01 L 215.44,137.14 L 218.62,130.90 L 214.20,128.20 L 210.27,124.83 L 205.32,129.78 L 197.96,119.66 L 204.20,116.48 L 202.22,111.70 L 201.01,106.66 L 194.09,107.76 L 194.09,95.24 L 201.01,96.34 L 202.22,91.30 L 204.20,86.52 L 197.96,83.34 L 205.32,73.22 L 210.27,78.17 L 214.20,74.80 L 218.62,72.10 L 215.44,65.86 L 227.34,61.99 L 228.44,68.91 L 233.60,68.50 L 238.76,68.91 L 239.86,61.99 L 251.76,65.86 L 248.58,72.10 L 253.00,74.80 L 256.93,78.17 L 261.88,73.22 L 269.24,83.34 L 263.00,86.52 Z"/>
+              <circle cx="233.6" cy="101.5" r="9" fill="url(#mhChamberHub)" stroke="#000" stroke-width="0.5"/>
+            </g>
+          </svg>
+        </div>
+        <!-- Shown by script.js only on iOS builds that require an explicit gesture to grant motion access -->
+        <button type="button" class="mh-portfolio-chamber__motion-btn" id="mh-portfolio-motion-btn" hidden>Activate Motion</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <section class="mh-portfolio-marquee" aria-label="What working with me looks like">
+    <div class="mh-portfolio-marquee__track">
+      <div class="mh-portfolio-marquee__group">
+        <span>Fast Turnaround</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Mobile-First Design</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>SEO Friendly</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Secure &amp; Reliable</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Ongoing Support</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Custom-Built</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>E-commerce Ready</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Affordable Pricing</span>
+      </div>
+      <div class="mh-portfolio-marquee__group" aria-hidden="true">
+        <span>Fast Turnaround</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Mobile-First Design</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>SEO Friendly</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Secure &amp; Reliable</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Ongoing Support</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Custom-Built</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>E-commerce Ready</span>
+        <svg class="mh-portfolio-marquee__divider" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm9.4 2.6-1.9-.3a7.6 7.6 0 0 0-.6-1.5l1.2-1.6a.6.6 0 0 0-.05-.8l-1.4-1.4a.6.6 0 0 0-.8-.05l-1.6 1.2a7.6 7.6 0 0 0-1.5-.6l-.3-1.9a.6.6 0 0 0-.6-.5h-2a.6.6 0 0 0-.6.5l-.3 1.9a7.6 7.6 0 0 0-1.5.6l-1.6-1.2a.6.6 0 0 0-.8.05L4.65 6.9a.6.6 0 0 0-.05.8l1.2 1.6a7.6 7.6 0 0 0-.6 1.5l-1.9.3a.6.6 0 0 0-.5.6v2a.6.6 0 0 0 .5.6l1.9.3a7.6 7.6 0 0 0 .6 1.5l-1.2 1.6a.6.6 0 0 0 .05.8l1.4 1.4a.6.6 0 0 0 .8.05l1.6-1.2a7.6 7.6 0 0 0 1.5.6l.3 1.9a.6.6 0 0 0 .6.5h2a.6.6 0 0 0 .6-.5l.3-1.9a7.6 7.6 0 0 0 1.5-.6l1.6 1.2a.6.6 0 0 0 .8-.05l1.4-1.4a.6.6 0 0 0 .05-.8l-1.2-1.6a7.6 7.6 0 0 0 .6-1.5l1.9-.3a.6.6 0 0 0 .5-.6v-2a.6.6 0 0 0-.5-.6Z"/></svg>
+        <span>Affordable Pricing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RECENT WORKS ================= -->
+  <section class="mh-portfolio-work" id="mh-portfolio-work">
+    <div class="mh-portfolio-section-inner">
+
+      <div class="mh-portfolio-section-head">
+        <p class="mh-portfolio-eyebrow">Selected Projects</p>
+        <h2 class="mh-portfolio-heading-lg">Recent Works</h2>
+      </div>
+
+      <div class="mh-portfolio-work-list">
+
+
+        
+
+        <!-- Project 1 -->
+        <article class="mh-portfolio-work-card mh-portfolio-reveal">
+          <div class="mh-portfolio-work-media" style="--mh-work-color:#26221c;">
+            <img src="images/estate.png" alt="Premier Real Estate">
+          </div>
+          <div class="mh-portfolio-work-info">
+            <div class="mh-portfolio-work-top">
+              <span class="mh-portfolio-work-category">Property / Business Website</span>
+              <span class="mh-portfolio-work-year"><!-- EDIT: year -->2025</span>
+            </div>
+            <h3 class="mh-portfolio-work-title"><!-- EDIT: project name -->Real Estate Website</h3>
+            <p class="mh-portfolio-work-desc">
+              <!-- EDIT: description -->
+              A property listings website built to present homes clearly, with a clean layout for browsing listings by location and price.
+            </p>
+            <div class="mh-portfolio-work-tags">
+              <span>WordPress</span><span>WooCommerce</span><span>Elementor</span>
+            </div>
+            <!-- EDIT: replace # with the live site URL, or delete this line if it's not live yet -->
+            <a href="https://musti-properties-hub.vercel.app/" class="mh-portfolio-work-link" target="_blank" rel="noopener">Visit Website ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="mh-portfolio-work-card mh-portfolio-reveal">
+          <div class="mh-portfolio-work-media" style="--mh-work-color:#26221c;">
+            <img src="images/twinsbase.png" alt="Twin Base & Sons Enterprises website">
+          </div>
+          <div class="mh-portfolio-work-info">
+            <div class="mh-portfolio-work-top">
+              <span class="mh-portfolio-work-category">E-commerce Website</span>
+              <span class="mh-portfolio-work-year"><!-- EDIT: year -->2026</span>
+            </div>
+            <h3 class="mh-portfolio-work-title"><!-- EDIT: project name -->Twin Base &amp; Sons Enterprises</h3>
+            <p class="mh-portfolio-work-desc">
+              <!-- EDIT: description -->
+              A WooCommerce storefront for a paint and wallpaper retailer — built on Elementor, with a custom navy-and-gold footer, a themed 404 page and an optimized product catalog.
+            </p>
+            <div class="mh-portfolio-work-tags">
+              <span>WordPress</span><span>WooCommerce</span><span>Elementor</span>
+            </div>
+            <!-- EDIT: replace # with the live site URL, or delete this line if it's not live yet -->
+            <a href="https://twinsbaseandsons.vercel.app/" class="mh-portfolio-work-link" target="_blank" rel="noopener">Visit Website ↗</a>
+          </div>
+        </article>
+
+
+        <!-- Project 3 -->
+        <article class="mh-portfolio-work-card mh-portfolio-reveal">
+          <div class="mh-portfolio-work-media" style="--mh-work-color:#1c231d;">
+            <img src="images/portfolio2.png" alt="portfolio 2">
+          </div>
+          <div class="mh-portfolio-work-info">
+            <div class="mh-portfolio-work-top">
+              <span class="mh-portfolio-work-category">portfolio Landing Page</span>
+              <span class="mh-portfolio-work-year"><!-- EDIT: year -->2026</span>
+            </div>
+            <h3 class="mh-portfolio-work-title"><!-- EDIT: project name -->portfolio Landing Page</h3>
+            <p class="mh-portfolio-work-desc">
+              <!-- EDIT: description -->
+              A minimal, editorial portfolio crafted for a modern creative developer — blending immersive visuals, refined interactions, and a distraction-free experience that puts the work first.
+            </p>
+            <div class="mh-portfolio-work-tags">
+              <span>WordPress</span><span>Elementor</span>
+            </div>
+            <!-- EDIT: replace # with the live site URL, or delete this line if it's not live yet -->
+            <a href="#" class="mh-portfolio-work-link" target="_blank" rel="noopener">Visit Website ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="mh-portfolio-work-card mh-portfolio-reveal">
+          <div class="mh-portfolio-work-media" style="--mh-work-color:#241a14;">
+            <img src="images/restaurant.png" alt="Restaurant">
+          </div>
+          <div class="mh-portfolio-work-info">
+            <div class="mh-portfolio-work-top">
+              <span class="mh-portfolio-work-category">Restaurant / Business Website</span>
+              <span class="mh-portfolio-work-year"><!-- EDIT: year -->2026</span>
+            </div>
+            <h3 class="mh-portfolio-work-title"><!-- EDIT: project name -->Restaurant Website</h3>
+            <p class="mh-portfolio-work-desc">
+              <!-- EDIT: description -->
+              A menu-forward website for a restaurant, built around clear navigation, an online menu and easy ways for customers to get in touch.
+            </p>
+            <div class="mh-portfolio-work-tags">
+              <span>Custom-Built</span>
+            </div>
+            <!-- EDIT: replace # with the live site URL, or delete this line if it's not live yet -->
+            <a href="https://mustirestaur-myypplsx.manus.space" class="mh-portfolio-work-link" target="_blank" rel="noopener">Visit Website ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="mh-portfolio-work-card mh-portfolio-reveal">
+          <div class="mh-portfolio-work-media" style="--mh-work-color:#241a14;">
+            <img src="images/portfolio1.png" alt="Porfolio 1">
+          </div>
+          <div class="mh-portfolio-work-info">
+            <div class="mh-portfolio-work-top">
+              <span class="mh-portfolio-work-category">Portfolio Website</span>
+              <span class="mh-portfolio-work-year"><!-- EDIT: year -->2026</span>
+            </div>
+            <h3 class="mh-portfolio-work-title"><!-- EDIT: project name -->Portfolio Website</h3>
+            <p class="mh-portfolio-work-desc">
+              <!-- EDIT: description -->
+              A bold portfolio experience built to turn creative work into a compelling story — combining expressive typography, fluid motion, and a carefully structured case-study experience.
+            </p>
+            <div class="mh-portfolio-work-tags">
+              <span>Custom-Built</span>
+            </div>
+            <!-- EDIT: replace # with the live site URL, or delete this line if it's not live yet -->
+            <a href="https://mustiporfolio.vercel.app/" class="mh-portfolio-work-link" target="_blank" rel="noopener">Visit Website ↗</a>
+          </div>
+        </article>
+
+
+        <!-- Project 6 -->
+        <article class="mh-portfolio-work-card mh-portfolio-reveal">
+          <div class="mh-portfolio-work-media" style="--mh-work-color:#241a14;">
+            <img src="images/portfolio1.png" alt="Porfolio 1">
+          </div>
+          <div class="mh-portfolio-work-info">
+            <div class="mh-portfolio-work-top">
+              <span class="mh-portfolio-work-category">Clothing E-commerce Website</span>
+              <span class="mh-portfolio-work-year"><!-- EDIT: year -->2026</span>
+            </div>
+            <h3 class="mh-portfolio-work-title"><!-- EDIT: project name -->Clothing E-commerce Website</h3>
+            <p class="mh-portfolio-work-desc">
+              <!-- EDIT: description -->
+              A modern e-commerce store built to help a fashion brand turn online visitors into customers through a seamless and visually engaging shopping experience.
+            </p>
+            <div class="mh-portfolio-work-tags">
+              <span>WordPress</span><span>Elementor</span>
+            </div>
+            <!-- EDIT: replace # with the live site URL, or delete this line if it's not live yet -->
+            <a href="https://mustiporfolio.vercel.app/" class="mh-portfolio-work-link" target="_blank" rel="noopener">Visit Website ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="mh-portfolio-services" id="mh-portfolio-services">
+    <div class="mh-portfolio-section-inner">
+
+      <div class="mh-portfolio-section-head">
+        <p class="mh-portfolio-eyebrow">What I Do</p>
+        <h2 class="mh-portfolio-heading-lg">Services</h2>
+      </div>
+
+      <div class="mh-portfolio-services-grid">
+
+        <div class="mh-portfolio-service-card mh-portfolio-reveal">
+          <h3>Web Design</h3>
+          <p>Modern, conversion-focused websites designed around each business.</p>
+        </div>
+
+        <div class="mh-portfolio-service-card mh-portfolio-reveal">
+          <h3>WordPress Development</h3>
+          <p>Fast, responsive and easy-to-manage WordPress websites.</p>
+        </div>
+
+        <div class="mh-portfolio-service-card mh-portfolio-reveal">
+          <h3>E-Commerce</h3>
+          <p>Online stores designed to make browsing and purchasing simple.</p>
+        </div>
+
+        <div class="mh-portfolio-service-card mh-portfolio-reveal">
+          <h3>Landing Pages</h3>
+          <p>High-converting landing pages for businesses, products and campaigns.</p>
+        </div>
+
+        <div class="mh-portfolio-service-card mh-portfolio-reveal">
+          <h3>Website Redesign</h3>
+          <p>Transform outdated websites into modern digital experiences.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="mh-portfolio-about" id="mh-portfolio-about">
+    <div class="mh-portfolio-section-inner mh-portfolio-about-grid">
+
+      <div>
+        <p class="mh-portfolio-eyebrow">About</p>
+        <h2 class="mh-portfolio-heading-lg">A little about me</h2>
+        <p class="mh-portfolio-about-text">
+          <!-- EDIT: your bio -->
+          I'm an engineering student who designs and builds practical, modern websites for small businesses — from WooCommerce stores to landing pages. I care about clean structure, fast load times, and sites that stay easy to update long after launch.
+        </p>
+      </div>
+
+      <div class="mh-portfolio-skills">
+        <span class="mh-portfolio-skill-pill">WordPress</span>
+        <span class="mh-portfolio-skill-pill">WooCommerce</span>
+        <span class="mh-portfolio-skill-pill">Elementor</span>
+        <span class="mh-portfolio-skill-pill">HTML</span>
+        <span class="mh-portfolio-skill-pill">CSS</span>
+        <span class="mh-portfolio-skill-pill">JavaScript</span>
+        <span class="mh-portfolio-skill-pill">Figma</span>
+        <span class="mh-portfolio-skill-pill">GitHub</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section class="mh-portfolio-certs" id="mh-portfolio-certifications">
+    <div class="mh-portfolio-section-inner">
+
+      <div class="mh-portfolio-section-head">
+        <p class="mh-portfolio-eyebrow">Credentials</p>
+        <h2 class="mh-portfolio-heading-lg">Certifications &amp; Credentials</h2>
+        <p class="mh-portfolio-certs-intro">Proof of the skills and knowledge behind the work.</p>
+      </div>
+
+      <!-- EDIT: each card below is one certificate. Copy a whole <article> block
+           to add a 4th, 5th, etc. — update the data-cert-* attributes and the
+           image src to add your real ones. -->
+      <div class="mh-portfolio-certs-grid">
+
+        <article class="mh-portfolio-cert-card mh-portfolio-reveal">
+          <div class="mh-portfolio-cert-media">
+            <!-- EDIT: replace with <img src="images/certificates/cert-1.jpg" alt="..."> when you have the real certificate -->
+            <img src="images/certificates/cert-1.jpg" alt="Anthropic certificate of completion">
+          </div>
+          <div class="mh-portfolio-cert-info">
+            <h3 class="mh-portfolio-cert-title">Introduction to Artificial Intelligence</h3>
+            <p class="mh-portfolio-cert-meta">Anthropic &middot; 2026</p>
+            <button type="button" class="mh-portfolio-cert-view"
+              data-cert-title="Introduction to Artificial Intelligence"
+              data-cert-org="Claude"
+              data-cert-year="2026"
+              data-cert-img="images/certificates/cert-1.jpg">
+              View Certificate ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="mh-portfolio-cert-card mh-portfolio-reveal">
+          <div class="mh-portfolio-cert-media">
+            <!-- EDIT: replace with <img src="images/certificates/cert-2.jpg" alt="..."> when you have the real certificate -->
+            <svg class="mh-portfolio-cert-placeholder" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 29 14 40 15.5 32 23 34 34 24 28.5 14 34 16 23 8 15.5 19 14 24 4Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mh-portfolio-cert-info">
+            <!-- EDIT: title / org / year -->
+            <h3 class="mh-portfolio-cert-title">Responsive Web Design</h3>
+            <p class="mh-portfolio-cert-meta">freeCodeCamp &middot; 2025</p>
+            <button type="button" class="mh-portfolio-cert-view"
+              data-cert-title="Responsive Web Design"
+              data-cert-org="freeCodeCamp"
+              data-cert-year="2025"
+              data-cert-img="images/certificates/cert-2.jpg">
+              View Certificate ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="mh-portfolio-cert-card mh-portfolio-reveal">
+          <div class="mh-portfolio-cert-media">
+            <!-- EDIT: replace with <img src="images/certificates/cert-3.jpg" alt="..."> when you have the real certificate -->
+            <svg class="mh-portfolio-cert-placeholder" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 29 14 40 15.5 32 23 34 34 24 28.5 14 34 16 23 8 15.5 19 14 24 4Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mh-portfolio-cert-info">
+            <!-- EDIT: title / org / year -->
+            <h3 class="mh-portfolio-cert-title">Front-End Development</h3>
+            <p class="mh-portfolio-cert-meta">Techy Jaunt &middot; 2025</p>
+            <button type="button" class="mh-portfolio-cert-view"
+              data-cert-title="Front-End Development"
+              data-cert-org="Techy Jaunt"
+              data-cert-year="2025"
+              data-cert-img="images/certificates/cert-3.jpg">
+              View Certificate ↗
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="mh-portfolio-testimonials">
+    <div class="mh-portfolio-section-inner">
+
+      <div class="mh-portfolio-section-head">
+        <p class="mh-portfolio-eyebrow">Kind Words</p>
+        <h2 class="mh-portfolio-heading-lg">Testimonials</h2>
+      </div>
+
+      <!-- EDIT: replace these three placeholder testimonials with real client quotes -->
+      <div class="mh-portfolio-testimonial-grid">
+
+        <div class="mh-portfolio-testimonial-card mh-portfolio-reveal">
+          <p class="mh-portfolio-testimonial-quote">"Our new site finally looks as professional as the business actually is. Customers comment on it constantly."</p>
+          <div class="mh-portfolio-testimonial-author">
+            <span class="mh-portfolio-avatar"></span>
+            <div>
+              <p class="mh-portfolio-testimonial-name">Mrs Monsurat</p>
+              <p class="mh-portfolio-testimonial-business">Twins Base and Sons</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mh-portfolio-testimonial-card mh-portfolio-reveal">
+          <p class="mh-portfolio-testimonial-quote">"Communication was clear from start to finish, and the site was ready ahead of schedule."</p>
+          <div class="mh-portfolio-testimonial-author">
+            <span class="mh-portfolio-avatar"></span>
+            <div>
+              <p class="mh-portfolio-testimonial-name">Mr Mahmud</p>
+              <p class="mh-portfolio-testimonial-business">Al-Barka</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mh-portfolio-testimonial-card mh-portfolio-reveal">
+          <p class="mh-portfolio-testimonial-quote">"Easy to work with and genuinely cared about getting the details right, not just shipping something quick."</p>
+          <div class="mh-portfolio-testimonial-author">
+            <span class="mh-portfolio-avatar"></span>
+            <div>
+              <p class="mh-portfolio-testimonial-name">Aisha Bello</p>
+              <p class="mh-portfolio-testimonial-business">Premier Estate</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="mh-portfolio-cta">
+    <div class="mh-portfolio-section-inner mh-portfolio-cta-inner">
+      <h2 class="mh-portfolio-heading-lg">Got an idea?<br>Let's build it.</h2>
+      <a href="#mh-portfolio-contact" class="mh-portfolio-button mh-portfolio-button--primary">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="mh-portfolio-contact" id="mh-portfolio-contact">
+    <div class="mh-portfolio-section-inner mh-portfolio-contact-grid">
+
+      <div>
+        <p class="mh-portfolio-eyebrow">Get In Touch</p>
+        <h2 class="mh-portfolio-heading-lg">Contact</h2>
+        <p class="mh-portfolio-about-text">Ready to start a project? Tell me a bit about it and I'll get back to you.</p>
+        <p class="mh-portfolio-contact-detail">
+          <a href="mailto:hassanmustaqeem001@gmail.com">hassanmustaqeem001@gmail.com</a>
+        </p>
+        <a href="https://wa.me/2349122068094" class="mh-portfolio-button mh-portfolio-button--secondary" target="_blank" rel="noopener">Message on WhatsApp</a>
+      </div>
+
+      <!-- Formspree: your form endpoint is already filled in below -->
+      <form class="mh-portfolio-form" id="mh-portfolio-form" action="https://formspree.io/f/mljepdqo" method="POST">
+        <div class="mh-portfolio-form-row">
+          <label for="mh-name">Name</label>
+          <input type="text" id="mh-name" name="name" required>
+        </div>
+        <div class="mh-portfolio-form-row">
+          <label for="mh-email">Email</label>
+          <input type="email" id="mh-email" name="email" required>
+        </div>
+        <div class="mh-portfolio-form-row">
+          <label for="mh-type">Project Type</label>
+          <select id="mh-type" name="project_type">
+            <option>New Website</option>
+            <option>E-commerce Store</option>
+            <option>Website Redesign</option>
+            <option>Landing Page</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="mh-portfolio-form-row">
+          <label for="mh-message">Message</label>
+          <textarea id="mh-message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="mh-portfolio-button mh-portfolio-button--primary mh-portfolio-form-submit">Send Message</button>
+        <p class="mh-portfolio-form-status" id="mh-portfolio-form-status" role="status"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="mh-portfolio-faq" id="mh-portfolio-faq">
+    <div class="mh-portfolio-section-inner">
+
+      <div class="mh-portfolio-section-head">
+        <p class="mh-portfolio-eyebrow">Questions</p>
+        <h2 class="mh-portfolio-heading-lg">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="mh-portfolio-faq-list">
+
+        <details class="mh-portfolio-faq-item">
+          <summary>How long does a typical project take?</summary>
+          <p>Most small business websites take 1–3 weeks from kickoff to launch, depending on scope. Online stores and larger sites can take longer. I'll give you a clear timeline before we start.</p>
+        </details>
+
+        <details class="mh-portfolio-faq-item">
+          <summary>Do you only build WordPress websites?</summary>
+          <p>WordPress and WooCommerce are my main focus since they're flexible and easy for you to manage afterward, but I also build lightweight custom-coded sites like this one when that's a better fit.</p>
+        </details>
+
+        <details class="mh-portfolio-faq-item">
+          <summary>How much does a website cost?</summary>
+          <p>It depends on the size and features you need — a landing page costs less than a full online store. Tell me about your project and I'll give you a clear quote upfront, with no surprise fees.</p>
+        </details>
+
+        <details class="mh-portfolio-faq-item">
+          <summary>Do you offer support after the site is launched?</summary>
+          <p>Yes. Every project includes a short period of free support after launch, and I offer ongoing maintenance if you'd like help with updates, backups or changes down the line.</p>
+        </details>
+
+        <details class="mh-portfolio-faq-item">
+          <summary>Can you redesign my existing website?</summary>
+          <p>Yes — whether it's an outdated WordPress site or something built elsewhere, I can rebuild it with a modern design while keeping the content and structure that already works for you.</p>
+        </details>
+
+        <details class="mh-portfolio-faq-item">
+          <summary>Do I need to provide my own content and images?</summary>
+          <p>Ideally yes — text and images specific to your business make the site feel authentic. If you're missing some pieces, I can help source placeholders or guide you on what to prepare.</p>
+        </details>
+
+        <details class="mh-portfolio-faq-item">
+          <summary>How do we get started?</summary>
+          <p>Reach out through the contact form or WhatsApp with a bit about your business and what you need. I'll follow up with questions, a quote, and a timeline before any work begins.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="mh-portfolio-footer">
+    <div class="mh-portfolio-section-inner mh-portfolio-footer-inner">
+      <p class="mh-portfolio-footer-brand">Mustaqeem Hassan</p>
+
+      <nav class="mh-portfolio-footer-links">
+        <a href="#mh-portfolio-hero">Home</a>
+        <a href="#mh-portfolio-work">Work</a>
+        <a href="#mh-portfolio-services">Services</a>
+        <a href="#mh-portfolio-about">About</a>
+        <a href="#mh-portfolio-certifications">Certifications</a>
+        <a href="#mh-portfolio-contact">Contact</a>
+      </nav>
+
+      <div class="mh-portfolio-footer-social">
+        <a href="https://wa.me/2349122068094" aria-label="WhatsApp" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:hassanmustaqeem001@gmail.com" aria-label="Email">Email</a>
+        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
+      <p class="mh-portfolio-footer-copy">&copy; <span id="mh-portfolio-year"></span> Mustaqeem Hassan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= CERTIFICATE MODAL ================= -->
+  <div class="mh-portfolio-cert-modal" id="mh-portfolio-cert-modal" role="dialog" aria-modal="true" aria-labelledby="mh-portfolio-cert-modal-title" hidden>
+    <div class="mh-portfolio-cert-modal__backdrop" data-cert-close></div>
+    <div class="mh-portfolio-cert-modal__panel">
+      <button type="button" class="mh-portfolio-cert-modal__close" data-cert-close aria-label="Close certificate viewer">✕</button>
+      <button type="button" class="mh-portfolio-cert-modal__nav mh-portfolio-cert-modal__nav--prev" id="mh-portfolio-cert-prev" aria-label="Previous certificate">‹</button>
+      <button type="button" class="mh-portfolio-cert-modal__nav mh-portfolio-cert-modal__nav--next" id="mh-portfolio-cert-next" aria-label="Next certificate">›</button>
+      <img class="mh-portfolio-cert-modal__img" id="mh-portfolio-cert-modal-img" src="" alt="">
+      <div class="mh-portfolio-cert-modal__caption">
+        <p class="mh-portfolio-cert-modal__title" id="mh-portfolio-cert-modal-title"></p>
+        <p class="mh-portfolio-cert-modal__meta" id="mh-portfolio-cert-modal-meta"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= AI PORTFOLIO ASSISTANT ================= -->
+  <!-- Local only — no API, no backend, no network requests. See chatbot.js -->
+  <button type="button" class="mh-chat-launcher" id="mh-chat-launcher" aria-expanded="false" aria-label="Open portfolio assistant chat">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="mh-chat-launcher__icon"><path d="M12 2c0 5.2 2 8.8 6 10-4 1.2-6 4.8-6 10 0-5.2-2-8.8-6-10 4-1.2 6-4.8 6-10Z"/></svg>
+    <span>Ask AI</span>
+  </button>
+
+</div>
+<script src="script.js"></script>
+<script src="chatbot.js" defer></script>
+</body>
+</html>
