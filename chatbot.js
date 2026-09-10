@@ -170,7 +170,7 @@
   if (!launcher) return;
 
   var initialized = false;
-  var chatWindow, messagesEl, inputEl, sendBtn;
+  var chatWindow, backdrop, messagesEl, inputEl, sendBtn;
   var messages = [];
   var leadState = 'idle';
   var leadType = '';
@@ -211,6 +211,12 @@
   /* ---------- DOM building (lazy — only runs on first open) ---------- */
 
   function buildChatWindow() {
+    backdrop = document.createElement('div');
+    backdrop.className = 'mh-chat-backdrop';
+    backdrop.hidden = true;
+    backdrop.addEventListener('click', closeChat);
+    document.body.appendChild(backdrop);
+
     chatWindow = document.createElement('div');
     chatWindow.className = 'mh-chat-window';
     chatWindow.setAttribute('role', 'dialog');
@@ -221,7 +227,7 @@
     chatWindow.innerHTML =
       '<div class="mh-chat-header">' +
         '<div>' +
-          '<p class="mh-chat-header__title">AI Portfolio Assistant</p>' +
+          '<p class="mh-chat-header__title"><span class="mh-chat-header__badge">AI</span>Portfolio Assistant</p>' +
           '<p class="mh-chat-header__status"><span class="mh-chat-dot"></span>Online</p>' +
         '</div>' +
         '<div class="mh-chat-header__actions">' +
@@ -319,8 +325,18 @@
 
   function scrollToSection(id) {
     var el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
-    closeChat();
+    if (el) {
+      el.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+      closeChat();
+    } else if (id === 'mh-portfolio-work' && /work\.html$/.test(window.location.pathname)) {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+      closeChat();
+    } else if (id === 'mh-portfolio-certifications' && /certificates\.html$/.test(window.location.pathname)) {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+      closeChat();
+    } else {
+      window.location.href = 'index.html#' + id;
+    }
   }
 
   function showSuggestions(list) {
@@ -440,8 +456,12 @@
       buildChatWindow();
       renderWelcome();
     }
+    backdrop.hidden = false;
     chatWindow.hidden = false;
-    requestAnimationFrame(function () { chatWindow.classList.add('is-open'); });
+    requestAnimationFrame(function () {
+      backdrop.classList.add('is-open');
+      chatWindow.classList.add('is-open');
+    });
     launcher.setAttribute('aria-expanded', 'true');
     if (inputEl) inputEl.focus();
   }
@@ -449,8 +469,12 @@
   function closeChat() {
     if (!chatWindow) return;
     chatWindow.classList.remove('is-open');
+    backdrop.classList.remove('is-open');
     launcher.setAttribute('aria-expanded', 'false');
-    var hide = function () { chatWindow.hidden = true; };
+    var hide = function () {
+      chatWindow.hidden = true;
+      backdrop.hidden = true;
+    };
     if (reduceMotion) hide();
     else setTimeout(hide, 220);
   }
