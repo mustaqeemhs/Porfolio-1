@@ -1,0 +1,404 @@
+/* ============================================================
+   AI ASSISTANT PAGE — fully self-contained stylesheet.
+   Every color below is written explicitly on purpose (not
+   inherited from the portfolio's own CSS) so nothing here can
+   ever end up unreadable regardless of what other stylesheets
+   are loaded on the page.
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #050505;
+  height: 100%;
+}
+
+.mh-ai-page {
+  --ai-bg: #050505;
+  --ai-panel: #101010;
+  --ai-border: #262626;
+  --ai-text: #ffffff;
+  --ai-text-secondary: #b8b8b8;
+  --ai-placeholder: #888888;
+  --ai-accent: #c6a15b;
+
+  background: var(--ai-bg);
+  color: var(--ai-text);
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.mh-ai-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mh-ai-page button {
+  font-family: inherit;
+}
+
+/* ---------- Header ---------- */
+.mh-ai-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: calc(env(safe-area-inset-top, 0px) + 16px) 20px 16px;
+  border-bottom: 1px solid var(--ai-border);
+  background: var(--ai-bg);
+  flex-shrink: 0;
+}
+
+.mh-ai-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.mh-ai-header__logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--ai-panel);
+  border: 1px solid var(--ai-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mh-ai-header__logo img {
+  height: 13px;
+  width: auto;
+  display: block;
+}
+
+.mh-ai-header__brand-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ai-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mh-ai-header__title {
+  flex: 2;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ai-text);
+  white-space: nowrap;
+}
+
+.mh-ai-header__title .mh-ai-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ai-accent);
+  color: #050505;
+  font-size: 10px;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.mh-ai-header__right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mh-ai-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--ai-border);
+  background: var(--ai-panel);
+  color: var(--ai-text-secondary);
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.25s ease;
+}
+
+.mh-ai-close:hover,
+.mh-ai-close:focus-visible {
+  color: var(--ai-text);
+  border-color: var(--ai-accent);
+  transform: rotate(90deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mh-ai-close {
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .mh-ai-close:hover,
+  .mh-ai-close:focus-visible {
+    transform: none;
+  }
+}
+
+/* ---------- Chat area ---------- */
+.mh-ai-main {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mh-ai-thread {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mh-ai-msg {
+  display: flex;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  max-width: 100%;
+}
+
+.mh-ai-msg.is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mh-ai-msg {
+    transition: none;
+  }
+}
+
+.mh-ai-msg--user {
+  justify-content: flex-end;
+}
+
+.mh-ai-msg--bot {
+  justify-content: flex-start;
+}
+
+.mh-ai-bubble {
+  max-width: 78%;
+  padding: 13px 16px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.mh-ai-msg--bot .mh-ai-bubble {
+  background: var(--ai-panel);
+  border: 1px solid var(--ai-border);
+  color: var(--ai-text);
+  border-bottom-left-radius: 4px;
+}
+
+.mh-ai-msg--user .mh-ai-bubble {
+  background: var(--ai-text);
+  color: #050505;
+  border-bottom-right-radius: 4px;
+}
+
+.mh-ai-typing {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 16px;
+}
+
+.mh-ai-typing span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ai-text-secondary);
+  animation: mh-ai-typing-bounce 1.1s ease-in-out infinite;
+}
+
+.mh-ai-typing span:nth-child(2) { animation-delay: 0.15s; }
+.mh-ai-typing span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes mh-ai-typing-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30% { transform: translateY(-3px); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mh-ai-typing span {
+    animation: none;
+  }
+}
+
+.mh-ai-chips,
+.mh-ai-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  max-width: 100%;
+}
+
+.mh-ai-chip,
+.mh-ai-action-btn {
+  font-size: 13.5px;
+  color: var(--ai-text);
+  background: var(--ai-panel);
+  border: 1px solid var(--ai-border);
+  border-radius: 100px;
+  padding: 9px 15px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.mh-ai-chip:hover,
+.mh-ai-action-btn:hover,
+.mh-ai-chip:focus-visible,
+.mh-ai-action-btn:focus-visible {
+  border-color: var(--ai-accent);
+  color: var(--ai-accent);
+}
+
+.mh-ai-action-btn {
+  color: var(--ai-accent);
+  font-weight: 600;
+}
+
+.mh-ai-welcome-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 600;
+  color: var(--ai-text);
+  margin: 0 0 6px;
+}
+
+.mh-ai-welcome-sub {
+  font-size: 14px;
+  color: var(--ai-text-secondary);
+  margin: 0 0 20px;
+}
+
+/* ---------- Input ---------- */
+.mh-ai-input-bar {
+  flex-shrink: 0;
+  border-top: 1px solid var(--ai-border);
+  background: var(--ai-bg);
+  padding: 14px 20px calc(env(safe-area-inset-bottom, 0px) + 14px);
+}
+
+.mh-ai-input-row {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.mh-ai-input {
+  flex: 1;
+  resize: none;
+  background: var(--ai-panel);
+  border: 1px solid var(--ai-border);
+  border-radius: 14px;
+  padding: 13px 16px;
+  color: var(--ai-text) !important;
+  -webkit-text-fill-color: var(--ai-text);
+  caret-color: var(--ai-text);
+  color-scheme: dark;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.4;
+  max-height: 120px;
+  transition: border-color 0.2s ease;
+}
+
+.mh-ai-input::placeholder {
+  color: var(--ai-placeholder);
+  opacity: 1;
+}
+
+.mh-ai-input:focus-visible {
+  outline: none;
+  border-color: var(--ai-accent);
+}
+
+.mh-ai-send {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--ai-accent);
+  color: #050505;
+  font-size: 17px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.mh-ai-send:hover,
+.mh-ai-send:focus-visible {
+  transform: translateY(-2px);
+}
+
+.mh-ai-send:disabled {
+  opacity: 0.5;
+  cursor: default;
+  transform: none;
+}
+
+/* ---------- Focus states ---------- */
+.mh-ai-page a:focus-visible,
+.mh-ai-page button:focus-visible,
+.mh-ai-page textarea:focus-visible {
+  outline: 2px solid var(--ai-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .mh-ai-header {
+    padding: calc(env(safe-area-inset-top, 0px) + 12px) 14px 12px;
+  }
+
+  .mh-ai-header__brand-name {
+    display: none;
+  }
+
+  .mh-ai-header__title {
+    font-size: 11.5px;
+  }
+
+  .mh-ai-thread {
+    padding: 20px 14px 16px;
+  }
+
+  .mh-ai-input-bar {
+    padding: 12px 14px calc(env(safe-area-inset-bottom, 0px) + 12px);
+  }
+
+  .mh-ai-bubble {
+    max-width: 86%;
+    font-size: 14.5px;
+  }
+}

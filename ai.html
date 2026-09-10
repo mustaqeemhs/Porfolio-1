@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AI Portfolio Assistant — Mustaqeem Hassan</title>
+<meta name="description" content="Ask the local AI assistant about Mustaqeem Hassan's services, projects, skills and how to work together.">
+<meta name="robots" content="noindex">
+
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Deliberately NOT loading style.css here — this page is fully self-contained
+     in ai.css so the portfolio's CSS can never affect its text colors. -->
+<link rel="stylesheet" href="ai.css">
+</head>
+<body>
+<div class="mh-ai-page">
+
+  <header class="mh-ai-header">
+    <a href="index.html" class="mh-ai-header__brand" aria-label="Back to portfolio">
+      <span class="mh-ai-header__logo"><img src="images/logo-mark.png" alt=""></span>
+      <span class="mh-ai-header__brand-name">Mustaqeem Hassan</span>
+    </a>
+
+    <p class="mh-ai-header__title"><span class="mh-ai-badge">AI</span>Portfolio Assistant</p>
+
+    <div class="mh-ai-header__right">
+      <button type="button" class="mh-ai-close" id="mh-ai-close" aria-label="Close and return to portfolio" title="Close">✕</button>
+    </div>
+  </header>
+
+  <main class="mh-ai-main" id="mh-ai-main">
+    <div class="mh-ai-thread" id="mh-ai-thread" aria-live="polite"></div>
+  </main>
+
+  <div class="mh-ai-input-bar">
+    <div class="mh-ai-input-row">
+      <textarea class="mh-ai-input" id="mh-ai-input" rows="1" placeholder="Ask a question..." aria-label="Type a message"></textarea>
+      <button type="button" class="mh-ai-send" id="mh-ai-send" aria-label="Send message">↑</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="portfolioKnowledge.js"></script>
+<script src="ai.js"></script>
+</body>
+</html>
