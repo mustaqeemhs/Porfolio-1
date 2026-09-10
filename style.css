@@ -1566,6 +1566,8 @@ body {
   max-height: min(550px, 82vh);
   max-height: min(550px, 82dvh);
   background: #0c0c0c;
+  color: var(--mh-text);
+  color-scheme: dark;
   border: 1px solid var(--mh-border);
   border-radius: 18px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
@@ -1800,11 +1802,17 @@ body {
   border-radius: 12px;
   padding: 10px 12px;
   color: var(--mh-text);
+  color-scheme: dark;
   font-family: var(--mh-font-body);
   font-size: 13.5px;
   line-height: 1.4;
   max-height: 96px;
   transition: border-color 0.2s ease;
+}
+
+.mh-chat-input::placeholder {
+  color: var(--mh-muted);
+  opacity: 1;
 }
 
 .mh-chat-input:focus-visible {
@@ -1834,14 +1842,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .mh-chat-launcher span {
-    display: none;
-  }
-
-  .mh-chat-launcher {
-    padding: 13px;
-  }
-
   .mh-chat-window {
     right: 12px;
     left: 12px;
