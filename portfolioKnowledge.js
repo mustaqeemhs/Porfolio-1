@@ -181,10 +181,7 @@ var portfolioKnowledge = {
     { question: 'How long does a typical project take?', answer: 'Most small business websites take 1–3 weeks from kickoff to launch, depending on scope.' },
     { question: 'Do you offer support after launch?', answer: 'Yes — every project includes a short period of free support after launch, and ongoing maintenance is available too.' },
     { question: 'Do I need to provide my own content and images?', answer: "Ideally yes — text and images specific to your business make the site feel authentic. If you're missing some, I can help." }
-    { question: 'Do you only build WordPress websites?', answer: "WordPress and WooCommerce are my main focus since they're flexible and easy for you to manage afterward, but I also build lightweight custom-coded sites like this one when that's a better fit." }
-    { question: 'How much does a website cost?', answer: "It depends on the size and features you need — a landing page costs less than a full online store. Tell me about your project and I'll give you a clear quote upfront, with no surprise fees." }
-    { question: 'Can you redesign my existing website?', answer: "Yes — whether it's an outdated WordPress site or something built elsewhere, I can rebuild it with a modern design while keeping the content and structure that already works for you." }
-    { question: 'How do we get started?', answer: "Reach out through the contact form or WhatsApp with a bit about your business and what you need. I'll follow up with questions, a quote, and a timeline before any work begins." }
+    
     
     // EDIT: add more Q&A pairs the assistant should be able to answer directly.
   ],
