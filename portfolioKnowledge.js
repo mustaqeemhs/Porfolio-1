@@ -125,7 +125,17 @@ var portfolioKnowledge = {
       solution: '',
       technologies: ['WordPress', 'Elementor'],
       result: '',
-      url: ''
+      url: 'https://marshal-luxury-e-commerce.vercel.app/'
+    },
+    {
+      name: 'Portfolio Website',
+      category: 'Portfolio',
+      description: 'A showcase of bold video edits and striking graphic designs from event coverage and promotional campaigns to logos and social media visuals all crafted to engage audiences and strengthen brands.',
+      problem: '',
+      solution: '',
+      technologies: ['Custom-Built'],
+      result: '',
+      url: 'https://albarka-virid.vercel.app/'
     }
     // EDIT: copy one whole { ... } object above (including the comma before it)
     // to add another project. Keep "technologies" as a plain array of strings.
@@ -185,7 +195,8 @@ var portfolioKnowledge = {
     { question: 'Who built this site?', answer: "My boss MUSTI built it."},
     { question: 'Who own you?', answer: "My boss MUSTI own me." },
     { question: 'How are you?', answer: "I am fine, you?." },
-    { question: 'wagwan?', answer: "Wagwan bro." },                                                                                                                                                                                                                                                                                                                                   
+    { question: 'wagwan?', answer: "Wagwan bro." },
+    { question: 'Do you build e-commerce website?', answer: "Yes we build E-commerce and all kind of website" },                                                                                                                                                                                                                                                                                                                                   
     
     
     // EDIT: add more Q&A pairs the assistant should be able to answer directly.
