@@ -22,7 +22,7 @@ var portfolioKnowledge = {
     professionalName: 'Mustaqeem Hassan',      // EDIT: how you want to be introduced (can be same as name)
     role: 'Web Designer & Developer',          // EDIT: your title
     location: 'Nigeria',                       // EDIT: your city/country
-    experience: "Still growing — I'm an engineering student who has been building real client websites while learning web development and AI tools.", // EDIT: keep this honest — don't state years you haven't done
+    experience: "I’m Mustaqeem, a web designer creating clean, modern websites for businesses that want to stand out, earn trust, and turn visitors into customers. From business websites and real estate sites to WooCommerce stores, I focus on making every website look professional, work smoothly, and serve a clear purpose.", // EDIT: keep this honest — don't state years you haven't done
     email: 'hassanmustaqeem001@gmail.com',      // EDIT
     phone: '',                                  // EDIT: optional, leave blank to omit
     whatsapp: '2349122068094',                  // EDIT: digits only, country code, no + or leading 0
@@ -180,7 +180,12 @@ var portfolioKnowledge = {
   faqs: [
     { question: 'How long does a typical project take?', answer: 'Most small business websites take 1–3 weeks from kickoff to launch, depending on scope.' },
     { question: 'Do you offer support after launch?', answer: 'Yes — every project includes a short period of free support after launch, and ongoing maintenance is available too.' },
-    { question: 'Do I need to provide my own content and images?', answer: "Ideally yes — text and images specific to your business make the site feel authentic. If you're missing some, I can help." }
+    { question: 'Do I need to provide my own content and images?', answer: "Ideally yes — text and images specific to your business make the site feel authentic. If you're missing some, I can help." },
+    { question: 'Who built you?', answer: "My boss MUSTI built me." },
+    { question: 'Who built this site?', answer: "My boss MUSTI built it."},
+    { question: 'Who own you?', answer: "My boss MUSTI own me." },
+    { question: 'How are you?', answer: "I am fine, you?." },
+    { question: 'wagwan', answer: "Wagwan bro." },
     
     
     // EDIT: add more Q&A pairs the assistant should be able to answer directly.
