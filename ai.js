@@ -1,5 +1,5 @@
 /* ============================================================
-   AI PORTFOLIO ASSISTANT — page logic.
+   MUSTI AI — page logic.
    100% local: no API, no backend, no network requests. Reads
    from the global `portfolioKnowledge` object defined in
    portfolioKnowledge.js (loaded before this file).
@@ -140,22 +140,45 @@
     return text.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
+  var FAQ_STOPWORDS = ['a', 'an', 'the', 'is', 'are', 'was', 'were', 'do', 'does', 'did', 'you', 'your', 'i', 'my', 'me', 'to', 'of', 'in', 'on', 'at', 'for', 'with', 'this', 'that', 'it', 'and', 'how', 'what', 'why', 'when', 'where', 'who'];
+
   function matchFaq(text) {
     var norm = normalize(text);
-    var normWords = norm.split(' ');
+    var padded = ' ' + norm + ' ';
+    var tokens = norm.split(' ');
     var best = null;
     var bestScore = 0;
-    (K.faqs || []).forEach(function (faq) {
-      var qWords = normalize(faq.question).split(' ').filter(function (w) { return w.length > 3; });
+
+    (K.faqs || []).some(function (faq) {
+      var qNorm = normalize(faq.question);
+
+      /* Strongest signal: the whole question appears in what they typed —
+         handles short/idiomatic questions ("wagwan?", "how are you?")
+         that don't have enough distinguishing keywords to score on. */
+      if (qNorm && padded.indexOf(' ' + qNorm + ' ') !== -1) {
+        best = faq;
+        return true; // stop — exact phrase wins outright
+      }
+
+      var qWords = qNorm.split(' ').filter(function (w) { return w.length > 2 && FAQ_STOPWORDS.indexOf(w) === -1; });
+      if (!qWords.length) return false;
+
       var score = 0;
       qWords.forEach(function (w) {
-        if (normWords.indexOf(w) !== -1) score++;
+        var hit = tokens.some(function (t) { return t === w || (w.length >= 3 && t.indexOf(w) === 0 && t.length <= w.length + 2); });
+        if (hit) score++;
       });
-      if (score > bestScore && score >= 2) {
+
+      /* Short questions need fewer matching words to count as a hit —
+         a 1-2 word question shouldn't need an impossible score of 2. */
+      var threshold = qWords.length <= 2 ? 1 : 2;
+      if (score >= threshold && score > bestScore) {
         bestScore = score;
         best = faq;
       }
+      return false;
     });
+
     return best;
   }
 
@@ -172,7 +195,7 @@
         if (padded.indexOf(' ' + p + ' ') !== -1) score += 3;
       });
       (intent.words || []).forEach(function (w) {
-        var hit = tokens.some(function (t) { return t === w || (w.length >= 4 && t.indexOf(w) === 0 && t.length <= w.length + 3); });
+        var hit = tokens.some(function (t) { return t === w || (w.length >= 3 && t.indexOf(w) === 0 && t.length <= w.length + 2); });
         if (hit) score += 1;
       });
       if (score > bestScore) {
@@ -361,7 +384,7 @@
 
   /* ---------- welcome ---------- */
   function renderWelcome() {
-    addMessage('bot', "Hi! I'm the AI assistant for this portfolio. Ask me anything about my work, services, skills, experience, projects or how to work with me.");
+    addMessage('bot', "Hi! I'm Musti AI, the assistant for this portfolio. Ask me anything about my work, services, skills, experience, projects or how to work with me.");
     addChips([
       'What services do you offer?',
       'Tell me about your projects',
