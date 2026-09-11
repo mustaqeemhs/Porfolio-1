@@ -27,7 +27,7 @@ var portfolioKnowledge = {
     phone: '',                                  // EDIT: optional, leave blank to omit
     whatsapp: '2349122068094',                  // EDIT: digits only, country code, no + or leading 0
     shortBio: 'I design and build fast, modern WordPress websites that help small businesses look professional, attract customers and grow online.', // EDIT
-    longBio: "I'm an engineering student who designs and builds practical, modern websites for small businesses — from WooCommerce stores to landing pages. I care about clean structure, fast load times, and sites that stay easy to update long after launch." // EDIT
+    longBio: "I build modern websites that help small businesses shine from WooCommerce shops to sleek landing pages. I care about clean design, fast performance, and making sure your site stays simple to update long after launch." // EDIT
   },
 
   /* ---------- 2. SERVICES — copy one object to add another ---------- */
@@ -206,7 +206,7 @@ var portfolioKnowledge = {
   socialLinks: {
     whatsapp: 'https://wa.me/2349122068094', // EDIT
     email: 'mailto:hassanmustaqeem001@gmail.com', // EDIT
-    linkedin: 'https://www.linkedin.com/in/mustaqeem-hassan-9b8899396 ', // EDIT
+    linkedin: 'https://www.linkedin.com/in/mustaqeem-hassan-9b8899396', // EDIT
     github: 'https://github.com/mustaqeemhs'    // EDIT
   }
 
