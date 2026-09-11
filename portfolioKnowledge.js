@@ -185,7 +185,7 @@ var portfolioKnowledge = {
     { question: 'Who built this site?', answer: "My boss MUSTI built it."},
     { question: 'Who own you?', answer: "My boss MUSTI own me." },
     { question: 'How are you?', answer: "I am fine, you?." },
-    { question: 'wagwan', answer: "Wagwan bro." },
+    { question: 'wagwan', answer: "Wagwan bro." },                                                                                                                                                                                                                                                                                                                                   
     
     
     // EDIT: add more Q&A pairs the assistant should be able to answer directly.
