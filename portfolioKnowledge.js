@@ -206,7 +206,7 @@ var portfolioKnowledge = {
   socialLinks: {
     whatsapp: 'https://wa.me/2349122068094', // EDIT
     email: 'mailto:hassanmustaqeem001@gmail.com', // EDIT
-    linkedin: 'linkedin.com/in/mustaqeem-hassan-9b8899396', // EDIT
+    linkedin: 'https://www.linkedin.com/in/mustaqeem-hassan-9b8899396 ', // EDIT
     github: 'https://github.com/mustaqeemhs'    // EDIT
   }
 
