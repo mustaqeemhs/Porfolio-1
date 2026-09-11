@@ -185,11 +185,7 @@ var portfolioKnowledge = {
     { question: 'How much does a website cost?', answer: "It depends on the size and features you need — a landing page costs less than a full online store. Tell me about your project and I'll give you a clear quote upfront, with no surprise fees." }
     { question: 'Can you redesign my existing website?', answer: "Yes — whether it's an outdated WordPress site or something built elsewhere, I can rebuild it with a modern design while keeping the content and structure that already works for you." }
     { question: 'How do we get started?', answer: "Reach out through the contact form or WhatsApp with a bit about your business and what you need. I'll follow up with questions, a quote, and a timeline before any work begins." }
-    { question: 'Who built you?', answer: "My boss MUSTI built me." }
-    { question: 'Who built this site?', answer: "My boss MUSTI built it."}
-    { question: 'Who own you?', answer: "My boss MUSTI own me." }
-    { question: 'How are you?', answer: "I am fine, you?." }
-    { question: 'wagwan', answer: "Wagwan bro." }
+    
     // EDIT: add more Q&A pairs the assistant should be able to answer directly.
   ],
 
