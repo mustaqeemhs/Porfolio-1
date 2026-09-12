@@ -199,7 +199,7 @@ var portfolioKnowledge = {
     { question: 'who are you?', answer: "I am Mustaqeem Bammeke. A Web Designer and the founder mustiWeb, A web design agency." },
     { question: 'awfa?', answer: "I dey bro, how your side" },
     { question: 'haffa?', answer: "I dey o, how your side" },
-    { question: 'wagwan?', answer: "I dey bro, How your side na." },
+    { question: 'wat sup?', answer: "watsup bro." },
     { question: 'how you dey?', answer: "I dey well bro, how your side" },
     { question: 'Do you build e-commerce website?', answer: "Yes we build E-commerce and all kind of website" },                                                                                                                                                                                                                                                                                                                                   
     
