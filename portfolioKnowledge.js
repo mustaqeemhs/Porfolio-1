@@ -24,10 +24,10 @@ var portfolioKnowledge = {
     location: 'Nigeria',                       // EDIT: your city/country
     experience: "I’m Mustaqeem, a web designer creating clean, modern websites for businesses that want to stand out, earn trust, and turn visitors into customers. From business websites and real estate sites to WooCommerce stores, I focus on making every website look professional, work smoothly, and serve a clear purpose.", // EDIT: keep this honest — don't state years you haven't done
     email: 'hassanmustaqeem001@gmail.com',      // EDIT
-    phone: '',                                  // EDIT: optional, leave blank to omit
+    phone: '09122068094',                                  // EDIT: optional, leave blank to omit
     whatsapp: '2349122068094',                  // EDIT: digits only, country code, no + or leading 0
     shortBio: 'I design and build fast, modern WordPress websites that help small businesses look professional, attract customers and grow online.', // EDIT
-    longBio: "I build modern websites that help small businesses shine from WooCommerce shops to sleek landing pages. I care about clean design, fast performance, and making sure your site stays simple to update long after launch." // EDIT
+    longBio: "I'm an engineering student who designs and builds practical, modern websites for small businesses — from WooCommerce stores to landing pages. I care about clean structure, fast load times, and sites that stay easy to update long after launch." // EDIT
   },
 
   /* ---------- 2. SERVICES — copy one object to add another ---------- */
@@ -75,7 +75,7 @@ var portfolioKnowledge = {
       solution: '',  // EDIT
       technologies: ['WordPress', 'WooCommerce', 'Elementor'],
       result: '',    // EDIT: only fill this in with something real — leave blank if unknown, never invented
-      url: ''
+      url: 'https://musti-properties-hub.vercel.app/'
     },
     {
       name: 'Twin Base & Sons Enterprises',
@@ -95,7 +95,7 @@ var portfolioKnowledge = {
       solution: '',
       technologies: ['WordPress', 'Elementor'],
       result: '',
-      url: ''
+      url: 'https://mustiporfolio-2.vercel.app/'
     },
     {
       name: 'Restaurant Website',
@@ -105,7 +105,7 @@ var portfolioKnowledge = {
       solution: '',
       technologies: ['Custom-Built'],
       result: '',
-      url: 'https://mustirestaur-myypplsx.manus.space'
+      url: '#'
     },
     {
       name: 'Portfolio Website',
@@ -196,6 +196,10 @@ var portfolioKnowledge = {
     { question: 'Who own you?', answer: "My boss MUSTI own me." },
     { question: 'How are you?', answer: "I am fine, you?." },
     { question: 'wagwan?', answer: "Wagwan bro." },
+    { question: 'who are you?', answer: "I am Mustaqeem Bammeke. A Web Designer and the founder mustiWeb, A web design agency." },
+    { question: 'awfa?', answer: "I dey bro, how your side" },
+    { question: 'haffa?', answer: "I dey o, how your side" },
+    { question: 'wagwan?', answer: "I dey bro, How your side na." },
     { question: 'Do you build e-commerce website?', answer: "Yes we build E-commerce and all kind of website" },                                                                                                                                                                                                                                                                                                                                   
     
     
